@@ -10,12 +10,17 @@
     <sound>sound\music_bgm</sound>
   </sounds>
   <sprites name="sprites">
+    <sprite>sprites\track_spr</sprite>
     <sprite>sprites\block_spr</sprite>
     <sprite>sprites\enemy_car</sprite>
     <sprite>sprites\player_car</sprite>
     <sprite>sprites\wall1</sprite>
     <sprite>sprites\aipoint_spr</sprite>
     <sprite>sprites\lappoint_spr</sprite>
+    <sprites name="BouncyGuy">
+      <sprite>sprites\Jumping_spr</sprite>
+      <sprite>sprites\Standing_spr</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
