@@ -36,6 +36,7 @@
     <object>objects\lapChecker</object>
     <object>objects\lapPoint</object>
     <object>objects\controller</object>
+    <object>objects\skidmarks</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Main_rm</room>
