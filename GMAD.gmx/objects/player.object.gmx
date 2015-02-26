@@ -110,8 +110,9 @@ obj.inRight = keyboard_check( ord( 'D' ) );
 
 draw_set_color( c_white );
 draw_set_alpha( 1 );
+draw_set_font( main_ft );
 
-draw_text( 16, 16, string( ds_map_find_value( lapChecker.lap, obj ) ) );
+draw_text( 32, 32, string( ds_map_find_value( lapChecker.lap, obj ) ) );
 </string>
           </argument>
         </arguments>

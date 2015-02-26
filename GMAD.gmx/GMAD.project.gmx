@@ -30,6 +30,9 @@
     <background>background\track_bg</background>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\main_ft</font>
+  </fonts>
   <objects name="objects">
     <object>objects\wall</object>
     <object>objects\car</object>
