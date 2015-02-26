@@ -85,11 +85,45 @@ if ( inLeft ) {
 if ( inRight ) {
     tTorque += 1;
 }
-physics_apply_torque( tTorque * 1000 );
+phy_rotation += tTorque * 5;
 
 if ( inForward ) {
     physics_apply_local_force( 0, 0, 0, -3000 );
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Detect skidding
+
+var tSkid = 0;
+if ( phy_speed &gt; 0 ) {
+    var tDir = point_direction( 0, 0, phy_speed_x, phy_speed_y );
+    var tRot = ( 180 - phy_rotation - 90 );
+    
+    var diff = angle_difference( tRot, tDir );
+    
+    var tSkid = min( abs( diff ) / 60, 1 );
+}
+
+phy_linear_damping = ( 1.5 * ( 1 - tSkid ) );
+
 </string>
           </argument>
         </arguments>
@@ -125,7 +159,7 @@ if ( inForward ) {
   <PhysicsObjectRestitution>0.100000001490116</PhysicsObjectRestitution>
   <PhysicsObjectGroup>0</PhysicsObjectGroup>
   <PhysicsObjectLinearDamping>1.5</PhysicsObjectLinearDamping>
-  <PhysicsObjectAngularDamping>10</PhysicsObjectAngularDamping>
+  <PhysicsObjectAngularDamping>50</PhysicsObjectAngularDamping>
   <PhysicsObjectFriction>0.800000011920929</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
