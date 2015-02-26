@@ -204,7 +204,7 @@ if ( phy_speed &gt; 0 ) {
     tSkid *= min( phy_speed / 3, 1 )
 }
 
-if ( tSkid &lt; 0.4 ) tSkid = 0;
+if ( tSkid &lt; 0.3 ) tSkid = 0;
 skidVal = max( tSkid, ( skidVal - 0.025 ) );
 
 phy_linear_damping = ( 1.5 * ( 1 - power( skidVal, 0.5 ) ) );
@@ -279,7 +279,7 @@ if ( !audio_is_playing( hit_sd ) ) audio_play_sound( hit_sd, 0, false );
             <string>///Draw skidmarks
 
 draw_set_color( c_dkgray );
-draw_set_alpha( power( skidVal, 1.25 ) );
+draw_set_alpha( power( skidVal, 1 ) );
 
 with ( skidmarks ) {
     if ( surface_exists( surf ) ) {
