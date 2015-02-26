@@ -8,11 +8,15 @@
   <sprites name="sprites">
     <sprite>sprites\player_car</sprite>
     <sprite>sprites\enemy_car</sprite>
+    <sprite>sprites\block_spr</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\wall</object>
+  </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\Main_rm</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
