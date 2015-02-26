@@ -6,14 +6,19 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\player_car</sprite>
-    <sprite>sprites\enemy_car</sprite>
     <sprite>sprites\block_spr</sprite>
+    <sprite>sprites\enemy_car</sprite>
+    <sprite>sprites\player_car</sprite>
+    <sprite>sprites\wall1</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background1</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\wall</object>
+    <object>objects\car</object>
+    <object>objects\player</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Main_rm</room>
