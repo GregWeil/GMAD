@@ -32,7 +32,7 @@
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="background1" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="track_bg" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -54,21 +54,39 @@
     <instance objName="self" x="512" y="352" name="inst_BAB73EF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="self" x="448" y="288" name="inst_EB07418E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="player" x="544" y="640" name="inst_E9330F97" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="wall" x="128" y="576" name="inst_1727330F" locked="0" code="" scaleX="2" scaleY="5" colour="4294967295" rotation="30"/>
-    <instance objName="wall" x="224" y="672" name="inst_CE96A961" locked="0" code="" scaleX="7" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="wall" x="128" y="320" name="inst_8841A6F5" locked="0" code="" scaleX="2" scaleY="7" colour="4294967295" rotation="0"/>
-    <instance objName="AIPoint" x="288" y="576" name="inst_5E10E14E" locked="0" code="index = 0;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="AIPoint" x="224" y="256" name="inst_6E3B3F8A" locked="0" code="index = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="AIPoint" x="512" y="96" name="inst_B9821289" locked="0" code="index = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="AIPoint" x="960" y="224" name="inst_B761FBD9" locked="0" code="index = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="wall" x="96" y="768" name="inst_26AAEFC0" locked="0" code="" scaleX="34" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="wall" x="96" y="0" name="inst_CE96A961" locked="0" code="" scaleX="0.100000001490116" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="wall" x="0" y="128" name="inst_8841A6F5" locked="0" code="" scaleX="4" scaleY="20" colour="4294967295" rotation="0"/>
+    <instance objName="AIPoint" x="416" y="672" name="inst_5E10E14E" locked="0" code="index = 0;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="AIPoint" x="160" y="160" name="inst_6E3B3F8A" locked="0" code="index = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="AIPoint" x="672" y="160" name="inst_B9821289" locked="0" code="index = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="AIPoint" x="928" y="32" name="inst_B761FBD9" locked="0" code="index = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="controller" x="0" y="0" name="inst_A4E6145E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="lapChecker" x="32" y="32" name="inst_C7DF48DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="lapPoint" x="352" y="128" name="inst_7FE230DF" locked="0" code="index = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="lapPoint" x="800" y="256" name="inst_128B03CB" locked="0" code="index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="lapPoint" x="416" y="480" name="inst_1ED9951D" locked="0" code="index = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="lapPoint" x="192" y="352" name="inst_7FE230DF" locked="0" code="index = 0;&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="lapPoint" x="832" y="64" name="inst_128B03CB" locked="0" code="index = 1;&#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="lapPoint" x="800" y="704" name="inst_1ED9951D" locked="0" code="index = 2;&#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="Jumpy_obj" x="384" y="256" name="inst_3F5AEF6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Jumpy_obj" x="288" y="192" name="inst_19AA5BDE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Jumpy_obj" x="448" y="192" name="inst_CD4B98AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="256" y="64" name="inst_19AA5BDE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="480" y="64" name="inst_CD4B98AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="wall" x="256" y="256" name="inst_79E75B53" locked="0" code="" scaleX="20" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="wall" x="768" y="128" name="inst_AE365437" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="wall" x="768" y="384" name="inst_D0A4F99A" locked="0" code="" scaleX="4" scaleY="8" colour="4294967295" rotation="0"/>
+    <instance objName="wall" x="896" y="512" name="inst_3C992BEA" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="wall" x="1024" y="0" name="inst_D93B7B90" locked="0" code="" scaleX="8" scaleY="12" colour="4294967295" rotation="0"/>
+    <instance objName="wall" x="1152" y="384" name="inst_3C4D96C1" locked="0" code="" scaleX="4" scaleY="12" colour="4294967295" rotation="0"/>
+    <instance objName="wall" x="256" y="384" name="inst_8BEDD030" locked="0" code="" scaleX="4" scaleY="8" colour="4294967295" rotation="0"/>
+    <instance objName="wall" x="512" y="512" name="inst_6A9D96F5" locked="0" code="" scaleX="4" scaleY="8" colour="4294967295" rotation="0"/>
+    <instance objName="wall" x="0" y="0" name="inst_8980B111" locked="0" code="" scaleX="20" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="wall" x="512" y="-128" name="inst_CBA97EDB" locked="0" code="" scaleX="20" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="AIPoint" x="672" y="32" name="inst_C80A7BD5" locked="0" code="index = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="AIPoint" x="928" y="416" name="inst_4F8A5BF1" locked="0" code="index = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="AIPoint" x="1056" y="416" name="inst_CD12C5ED" locked="0" code="index = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="AIPoint" x="1056" y="672" name="inst_3424F62D" locked="0" code="index = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="AIPoint" x="672" y="672" name="inst_5D8C9915" locked="0" code="index = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="AIPoint" x="672" y="416" name="inst_C05959FD" locked="0" code="index = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="AIPoint" x="416" y="416" name="inst_0714FFF1" locked="0" code="index = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="AIPoint" x="160" y="672" name="inst_2B102053" locked="0" code="index = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>
