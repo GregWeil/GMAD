@@ -24,6 +24,7 @@
     <object>objects\wall</object>
     <object>objects\car</object>
     <object>objects\player</object>
+    <object>objects\bot</object>
     <object>objects\AIPoint</object>
     <object>objects\lapChecker</object>
     <object>objects\lapPoint</object>
