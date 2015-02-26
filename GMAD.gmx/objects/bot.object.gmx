@@ -30,7 +30,7 @@
 obj = instance_create( x, y, car );
 obj.input = id;
 
-obj.sprite_index = player_car;
+
 
 indexTo = 0; //the index of the AIPoint they're heading towards
 </string>
