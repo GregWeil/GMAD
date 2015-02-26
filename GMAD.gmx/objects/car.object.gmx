@@ -29,6 +29,7 @@
 
 input = noone;
 inForward = false;
+inRevers = false;
 inLeft = false;
 inRight = false;
 </string>
@@ -143,6 +144,9 @@ phy_rotation += tTorque * 5;
 if ( inForward ) {
     physics_apply_local_force( 0, 0, 0, -3000 );
     audio_sound_gain( engine, 1, 100 );
+} else if ( inReverse ) {
+    physics_apply_local_force( 0, 0, 0, 1000 );
+    audio_sound_gain( engine, 0.6, 100 );
 } else audio_sound_gain( engine, 0, 250 );
 </string>
           </argument>
@@ -173,12 +177,13 @@ if ( phy_speed &gt; 0 ) {
     
     var diff = angle_difference( tRot, tDir );
     
-    var tSkid = min( abs( diff ) / 60, 1 );
+    var tSkid = min( abs( diff ) / 120, 1 );
     tSkid *= min( phy_speed / 3, 1 )
 }
 
-phy_linear_damping = ( 1.5 * ( 1 - tSkid ) );
-audio_sound_gain( skid, power( tSkid, 2 ), 100 );
+if ( tSkid &lt; 0.3 ) tSkid = 0;
+phy_linear_damping = ( 1.5 * ( 1 - power( tSkid, 0.5 ) ) );
+audio_sound_gain( skid, power( tSkid, 1.5 ), 100 );
 </string>
           </argument>
         </arguments>
