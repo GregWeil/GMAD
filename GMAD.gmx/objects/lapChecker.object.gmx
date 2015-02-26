@@ -28,6 +28,7 @@
             <string>///Create a map of position
 
 position = ds_map_create( );
+lap = ds_map_create( );
 </string>
           </argument>
         </arguments>
@@ -77,6 +78,7 @@ pointCount = 0;
             <string>///Destroy map
 
 ds_map_destroy( position );
+ds_map_destroy( lap );
 </string>
           </argument>
         </arguments>
@@ -102,12 +104,13 @@ ds_map_destroy( position );
             <string>///Check all cars
 
 with ( car ) {
-    if ( !ds_map_exists( other.position, id ) ) ds_map_add( other.position, id, 0);
+    if ( !ds_map_exists( other.position, id ) ) ds_map_add( other.position, id, 0 );
     var tPos = ds_map_find_value( other.position, id );
     var tGoal = other.points[tPos % other.pointCount];
     if ( physics_test_overlap( phy_position_x, phy_position_y, phy_rotation, tGoal ) ) {
         ds_map_replace( other.position, id, ( tPos + 1 ) );
     }
+    ds_map_replace( other.lap, id, ( floor( (tPos-1) / other.pointCount ) + 1 ) );
 }
 </string>
           </argument>
