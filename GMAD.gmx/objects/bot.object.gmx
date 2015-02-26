@@ -114,14 +114,14 @@ if (diff &gt; 0){
     obj.inRight = true;
 }
 
-if (point_distance(obj.x, obj.y, aip.x, aip.y) &lt; 70){
+if (point_distance(obj.x, obj.y, aip.x, aip.y) &lt; 64){
     //move to next AIPoint
     indexTo++;
     if (indexTo &gt;= l){
         indexTo = 0;
     }
-    aiOffX = random(60) - 30;
-    aiOffY = random(60) - 30;
+    aiOffX = random_range( -48, 48 );
+    aiOffY = random_range( -48, 48 );
 }
 </string>
           </argument>

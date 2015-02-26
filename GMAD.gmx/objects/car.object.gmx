@@ -166,10 +166,10 @@ phy_rotation += tTorque * 5;
 
 if ( inForward ) {
     physics_apply_local_force( 0, 0, 0, -3000 );
-    audio_sound_gain( engine, 1, 100 );
+    audio_sound_gain( engine, 0.01, 100 );
 } else if ( inReverse ) {
     physics_apply_local_force( 0, 0, 0, 1000 );
-    audio_sound_gain( engine, 0.6, 100 );
+    audio_sound_gain( engine, 0.006, 100 );
 } else audio_sound_gain( engine, 0, 250 );
 </string>
           </argument>
@@ -209,6 +209,51 @@ skidVal = max( tSkid, ( skidVal - 0.025 ) );
 
 phy_linear_damping = ( 1.5 * ( 1 - power( skidVal, 0.5 ) ) );
 audio_sound_gain( skid, power( skidVal, 1.5 ), 20 );
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="car">
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>enable collision</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Play collision sound
+
+if ( !audio_is_playing( hit_sd ) ) audio_play_sound( hit_sd, 0, false );
 </string>
           </argument>
         </arguments>
@@ -304,7 +349,7 @@ draw_set_alpha( 1 );
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>
   <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
-  <PhysicsObjectRestitution>0.100000001490116</PhysicsObjectRestitution>
+  <PhysicsObjectRestitution>1</PhysicsObjectRestitution>
   <PhysicsObjectGroup>0</PhysicsObjectGroup>
   <PhysicsObjectLinearDamping>1.5</PhysicsObjectLinearDamping>
   <PhysicsObjectAngularDamping>50</PhysicsObjectAngularDamping>
