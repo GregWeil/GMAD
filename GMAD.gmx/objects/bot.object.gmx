@@ -30,9 +30,13 @@
 obj = instance_create( x, y, car );
 obj.input = id;
 
-obj.image_blend = make_color_hsv( random_range( 0, 255 ), 255, 128 );
+obj.sprite_index = player_car;
 
 indexTo = 0; //the index of the AIPoint they're heading towards
+aiPoints = false; //list of AIPoints
+
+aiOffX = random(60) - 30;
+aiOffY = random(60) - 30;
 </string>
           </argument>
         </arguments>
@@ -58,6 +62,104 @@ indexTo = 0; //the index of the AIPoint they're heading towards
             <string>///Destroy car
 
 with ( obj ) instance_destroy( );
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///AI
+
+obj.inForward = true;//keyboard_check( ord( 'W' ) );
+//obj.inLeft = keyboard_check( ord( 'A' ) );
+//obj.inRight = keyboard_check( ord( 'D' ) );
+
+//indexTo = 0; //the index of the AIPoint they're heading towards
+//aiPoints = false; //list of AIPoints
+
+var l = array_length_1d(aiPoints);
+
+var aip = aiPoints[indexTo];
+/*
+x
+y
+phy_speed_x
+phy_rotation
+*/
+
+var dirToAIP = point_direction(obj.x, obj.y, aip.x + aiOffX, aip.y + aiOffY);
+var diff = angle_difference(dirToAIP, 90-obj.phy_rotation);
+
+if (diff &gt; 0){
+    obj.inLeft = true;
+    obj.inRight = false;
+} else {
+    obj.inLeft = false;
+    obj.inRight = true;
+}
+
+if (point_distance(obj.x, obj.y, aip.x, aip.y) &lt; 70){
+    //move to next AIPoint
+    indexTo++;
+    if (indexTo &gt;= l){
+        indexTo = 0;
+    }
+    aiOffX = random(60) - 30;
+    aiOffY = random(60) - 30;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Organize AIPoints
+
+var tQueue = ds_priority_create( );
+
+with ( AIPoint ) {
+    ds_priority_add( tQueue, id, index );
+}
+
+var ind = 0;
+while ( !ds_priority_empty( tQueue ) ) {
+    aiPoints[ind++] = ds_priority_find_min( tQueue );
+    ds_priority_delete_min( tQueue );
+}
+
+ds_priority_destroy( tQueue );
 </string>
           </argument>
         </arguments>
