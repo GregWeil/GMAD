@@ -4,13 +4,17 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\skid_sd</sound>
+    <sound>sound\engine_sd</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\block_spr</sprite>
     <sprite>sprites\enemy_car</sprite>
     <sprite>sprites\player_car</sprite>
     <sprite>sprites\wall1</sprite>
     <sprite>sprites\aipoint_spr</sprite>
+    <sprite>sprites\lappoint_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -22,6 +26,8 @@
     <object>objects\player</object>
     <object>objects\bot</object>
     <object>objects\AIPoint</object>
+    <object>objects\lapChecker</object>
+    <object>objects\lapPoint</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Main_rm</room>
