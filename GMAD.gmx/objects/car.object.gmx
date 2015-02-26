@@ -210,6 +210,30 @@ audio_sound_gain( skid, power( tSkid, 1.5 ), 100 );
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Play collision sound
+
+if ( !audio_is_playing( hit_sd ) ) audio_play_sound( hit_sd, 0, false );
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     </event>
   </events>
   <PhysicsObject>-1</PhysicsObject>
@@ -224,7 +248,7 @@ audio_sound_gain( skid, power( tSkid, 1.5 ), 100 );
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>2,1</point>
+    <point>2,1.5</point>
     <point>2,2</point>
   </PhysicsShapePoints>
 </object>

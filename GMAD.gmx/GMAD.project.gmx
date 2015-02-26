@@ -8,6 +8,7 @@
     <sound>sound\skid_sd</sound>
     <sound>sound\engine_sd</sound>
     <sound>sound\music_bgm</sound>
+    <sound>sound\hit_sd</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\track_spr</sprite>
