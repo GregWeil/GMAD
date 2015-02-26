@@ -30,7 +30,7 @@
 obj = instance_create( x, y, car );
 obj.input = id;
 
-obj.sprite_index = player_car;
+obj.image_blend = make_color_hsv( random_range( 0, 255 ), 255, 128 );
 
 indexTo = 0; //the index of the AIPoint they're heading towards
 </string>
