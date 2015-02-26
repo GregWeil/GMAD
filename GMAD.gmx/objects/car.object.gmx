@@ -29,7 +29,7 @@
 
 input = noone;
 inForward = false;
-inRevers = false;
+inReverse = false;
 inLeft = false;
 inRight = false;
 </string>
