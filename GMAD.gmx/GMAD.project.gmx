@@ -17,6 +17,7 @@
   <objects name="objects">
     <object>objects\wall</object>
     <object>objects\car</object>
+    <object>objects\player</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Main_rm</room>
