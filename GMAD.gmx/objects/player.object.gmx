@@ -81,6 +81,7 @@ with ( obj ) instance_destroy( );
             <string>///Update input
 
 obj.inForward = keyboard_check( ord( 'W' ) );
+obj.inReverse = keyboard_check( ord( 'S' ) );
 obj.inLeft = keyboard_check( ord( 'A' ) );
 obj.inRight = keyboard_check( ord( 'D' ) );
 </string>
