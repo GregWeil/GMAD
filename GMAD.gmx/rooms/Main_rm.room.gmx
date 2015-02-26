@@ -53,13 +53,13 @@
   <instances>
     <instance objName="self" x="512" y="352" name="inst_BAB73EF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="self" x="448" y="288" name="inst_EB07418E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="player" x="544" y="640" name="inst_E9330F97" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="player" x="199" y="391" name="inst_E9330F97" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="wall" x="96" y="768" name="inst_26AAEFC0" locked="0" code="" scaleX="34" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="wall" x="96" y="0" name="inst_CE96A961" locked="0" code="" scaleX="0.100000001490116" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="wall" x="0" y="128" name="inst_8841A6F5" locked="0" code="" scaleX="4" scaleY="20" colour="4294967295" rotation="0"/>
-    <instance objName="AIPoint" x="416" y="672" name="inst_5E10E14E" locked="0" code="index = 0;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="AIPoint" x="160" y="160" name="inst_6E3B3F8A" locked="0" code="index = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="AIPoint" x="672" y="160" name="inst_B9821289" locked="0" code="index = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="AIPoint" x="416" y="672" name="inst_5E10E14E" locked="0" code="index = 10;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="AIPoint" x="160" y="160" name="inst_6E3B3F8A" locked="0" code="index = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="AIPoint" x="672" y="160" name="inst_B9821289" locked="0" code="index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="AIPoint" x="928" y="32" name="inst_B761FBD9" locked="0" code="index = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="controller" x="0" y="0" name="inst_A4E6145E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="lapChecker" x="32" y="32" name="inst_C7DF48DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -79,14 +79,76 @@
     <instance objName="wall" x="512" y="512" name="inst_6A9D96F5" locked="0" code="" scaleX="4" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="wall" x="0" y="0" name="inst_8980B111" locked="0" code="" scaleX="20" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="wall" x="512" y="-128" name="inst_CBA97EDB" locked="0" code="" scaleX="20" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="AIPoint" x="672" y="32" name="inst_C80A7BD5" locked="0" code="index = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="AIPoint" x="928" y="416" name="inst_4F8A5BF1" locked="0" code="index = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="AIPoint" x="1056" y="416" name="inst_CD12C5ED" locked="0" code="index = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="AIPoint" x="1056" y="672" name="inst_3424F62D" locked="0" code="index = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="AIPoint" x="672" y="672" name="inst_5D8C9915" locked="0" code="index = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="AIPoint" x="672" y="416" name="inst_C05959FD" locked="0" code="index = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="AIPoint" x="416" y="416" name="inst_0714FFF1" locked="0" code="index = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="AIPoint" x="160" y="672" name="inst_2B102053" locked="0" code="index = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="AIPoint" x="672" y="32" name="inst_C80A7BD5" locked="0" code="index = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="AIPoint" x="928" y="416" name="inst_4F8A5BF1" locked="0" code="index = 4;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="AIPoint" x="1056" y="416" name="inst_CD12C5ED" locked="0" code="index = 5;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="AIPoint" x="1056" y="672" name="inst_3424F62D" locked="0" code="index = 6;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="AIPoint" x="672" y="672" name="inst_5D8C9915" locked="0" code="index = 7;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="AIPoint" x="672" y="416" name="inst_C05959FD" locked="0" code="index = 8;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="AIPoint" x="416" y="416" name="inst_0714FFF1" locked="0" code="index = 9;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="AIPoint" x="160" y="672" name="inst_2B102053" locked="0" code="index = 11;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bot" x="167" y="390" name="inst_F8FC8E4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bot" x="139" y="389" name="inst_44EFEF5A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bot" x="231" y="391" name="inst_2B911D9D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bot" x="137" y="424" name="inst_4FE0D8EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bot" x="167" y="423" name="inst_AE2E14E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bot" x="204" y="425" name="inst_BBFDC0C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bot" x="231" y="423" name="inst_28AA53AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bot" x="139" y="454" name="inst_252FD166" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bot" x="168" y="457" name="inst_4FA7EDB9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bot" x="204" y="455" name="inst_4AD8A193" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="bot" x="231" y="456" name="inst_445ED466" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="224" y="64" name="inst_A12E07BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="128" y="96" name="inst_5702FD70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="352" y="96" name="inst_477F4B57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="544" y="96" name="inst_45FD31A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="416" y="64" name="inst_5FD484FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="576" y="64" name="inst_E6F997AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="576" y="0" name="inst_9FF8EA94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="64" y="160" name="inst_1F48BED4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="96" y="256" name="inst_E06BBB5A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="96" y="352" name="inst_17DDF709" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="64" y="384" name="inst_CE4414AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="96" y="448" name="inst_8DFD2183" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="96" y="480" name="inst_54F82D65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="64" y="544" name="inst_C62C3208" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="96" y="608" name="inst_332C546C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="96" y="672" name="inst_3CE465D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="0" y="608" name="inst_E8753E9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="288" y="576" name="inst_42B1A35C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="320" y="448" name="inst_20F2F3F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="256" y="320" name="inst_9E4878B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="512" y="320" name="inst_28D2E3C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="672" y="256" name="inst_6398E568" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="832" y="128" name="inst_B80F8CFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="864" y="320" name="inst_BBDA8F6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="800" y="416" name="inst_E3C78985" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="768" y="512" name="inst_1E9B21B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="768" y="608" name="inst_B1F7FC0F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="864" y="608" name="inst_B9D60B26" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="800" y="544" name="inst_9118AE53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="928" y="544" name="inst_4F6E1C35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="992" y="576" name="inst_5D5ABF19" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="1152" y="704" name="inst_223B11AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="1216" y="672" name="inst_972B34D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="1152" y="608" name="inst_2AC06F33" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="1184" y="576" name="inst_45388180" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="1152" y="480" name="inst_56D04E0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="1184" y="416" name="inst_6788A44C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="1152" y="352" name="inst_88A48808" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="1120" y="352" name="inst_6AF8A0A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="1024" y="320" name="inst_65EBDB3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="1120" y="288" name="inst_A436F8B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="1024" y="224" name="inst_CC07AEE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="1056" y="288" name="inst_1F13BFE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="1056" y="160" name="inst_350B677F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="1088" y="64" name="inst_1993325D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="1024" y="96" name="inst_9D49BA1F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="1024" y="0" name="inst_1CDB4779" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="544" y="576" name="inst_EE4C2744" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="512" y="512" name="inst_42AD9B43" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="608" y="512" name="inst_4E6556E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Jumpy_obj" x="576" y="640" name="inst_BBC9C9E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>
