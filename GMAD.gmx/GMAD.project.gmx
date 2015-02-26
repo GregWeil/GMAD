@@ -9,6 +9,7 @@
     <sprite>sprites\block_spr</sprite>
     <sprite>sprites\enemy_car</sprite>
     <sprite>sprites\player_car</sprite>
+    <sprite>sprites\wall1</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
