@@ -12,6 +12,7 @@
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\wall</object>
+    <object>objects\car</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Main_rm</room>
