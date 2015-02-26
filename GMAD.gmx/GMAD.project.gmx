@@ -5,12 +5,10 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites">
-    <sprite>sprites\player_car</sprite>
-    <sprite>sprites\enemy_car</sprite>
-    <sprite>sprites\block_spr</sprite>
-  </sprites>
-  <backgrounds name="background"/>
+  <sprites name="sprites"/>
+  <backgrounds name="background">
+    <background>background\background1</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\wall</object>
