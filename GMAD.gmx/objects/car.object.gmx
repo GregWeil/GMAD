@@ -35,6 +35,59 @@ inRight = false;
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Sounds
+
+skid = audio_play_sound( skid_sd, 0, true );
+audio_sound_gain( skid, 0, 0 );
+
+engine = audio_play_sound( engine_sd, 0, true );
+audio_sound_gain( engine, 0, 0 );
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Stop sounds
+
+audio_stop_sound( skid );
+audio_stop_sound( engine );
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
@@ -89,7 +142,8 @@ phy_rotation += tTorque * 5;
 
 if ( inForward ) {
     physics_apply_local_force( 0, 0, 0, -3000 );
-}
+    audio_sound_gain( engine, 1, 100 );
+} else audio_sound_gain( engine, 0, 250 );
 </string>
           </argument>
         </arguments>
@@ -120,10 +174,11 @@ if ( phy_speed &gt; 0 ) {
     var diff = angle_difference( tRot, tDir );
     
     var tSkid = min( abs( diff ) / 60, 1 );
+    tSkid *= min( phy_speed / 3, 1 )
 }
 
 phy_linear_damping = ( 1.5 * ( 1 - tSkid ) );
-
+audio_sound_gain( skid, power( tSkid, 2 ), 100 );
 </string>
           </argument>
         </arguments>

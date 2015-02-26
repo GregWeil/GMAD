@@ -4,7 +4,10 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\skid_sd</sound>
+    <sound>sound\engine_sd</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\block_spr</sprite>
     <sprite>sprites\enemy_car</sprite>
