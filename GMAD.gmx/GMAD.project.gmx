@@ -16,11 +16,11 @@
     <background>background\background1</background>
   </backgrounds>
   <paths name="paths"/>
-  <scripts name="scripts"/>
   <objects name="objects">
     <object>objects\wall</object>
     <object>objects\car</object>
     <object>objects\player</object>
+    <object>objects\bot</object>
     <object>objects\AIPoint</object>
   </objects>
   <rooms name="rooms">
