@@ -19,6 +19,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
+    <background>background\integrated_circuit</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
