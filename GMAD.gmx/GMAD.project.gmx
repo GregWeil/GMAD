@@ -9,7 +9,7 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\Main_rm</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
