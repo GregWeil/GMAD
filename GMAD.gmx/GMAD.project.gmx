@@ -14,17 +14,19 @@
     <sprite>sprites\player_car</sprite>
     <sprite>sprites\wall1</sprite>
     <sprite>sprites\aipoint_spr</sprite>
+    <sprite>sprites\lappoint_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
   </backgrounds>
   <paths name="paths"/>
-  <scripts name="scripts"/>
   <objects name="objects">
     <object>objects\wall</object>
     <object>objects\car</object>
     <object>objects\player</object>
     <object>objects\AIPoint</object>
+    <object>objects\lapChecker</object>
+    <object>objects\lapPoint</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Main_rm</room>
